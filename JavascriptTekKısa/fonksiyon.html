@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function topla (a,b){
+    return a+b;
+}
+var sonuc = topla (10,20);
+console.log(sonuc);
+
+//  yas hesaplayan func
+var now = new Date().getFullYear();
+
+function yasHesapla(dogumYili){
+    var now = new Date().getFullYear();
+    return now-dogumYili;
+}
+var dogumYili =prompt("dogum tarihinizi giriniz: ");
+var yas = yasHesapla(dogumYili);
+console.log("Yaşınız "+yas);
+
+
+var ad = prompt("adinizi giriniz: ")
+var dogumYili = prompt("dogum tarihini giriniz: ")
+function emeklilikHesapla(ad,dogumYili){
+    var k_yas=yasHesapla(dogumYili);
+    var emeklilik = 65-k_yas;
+    if(emeklilik>0){
+        console.log(ad+' '+ emeklilik+ ' yıl sonra emekli olabilirsiniz.');
+        
+    }
+    else {
+        console.log("zaten "+(emeklilik*-1)+" yıldır emeklisiniz.");
+    }
+   
+}
+emeklilikHesapla(ad,dogumYili);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+   /*   // Girdiğimiz sayı çift tek söyleyen fonk   
+    var sayi=prompt("Bir sayi giriniz: ");
+    function tekCift(sayi){
+        if(sayi%2==0){
+            console.log("Girdiğiniz sayi çifttir.");
+        }else{
+            console.log("Girdiğiniz sayi tektir.");
+        }
+    }
+    tekCift(sayi);*/
+// faktöriyel hesaplayan fonk
+
+var sayi=prompt("Faktöriyelini hesaplamak istediğiniz sayiyi giriniz:");
+function fak(sayi){
+    if(sayi== 0|| sayi==1){
+        console.log("sonuç: 1");
+    }else{
+        var sonuc = 1;
+        for(var i = 2 ; i<= sayi ;i++){
+         sonuc *= i; 
+        
+        }
+        console.log("İşlemin sonucu: " +sonuc);
+      
+    }
+}
+fak(sayi);
+
+
+    </script>
+</body>
+</html>

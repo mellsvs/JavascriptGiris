@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+/* for(var i = 10;i<=100;i++){
+console.log(i);
+}*/
+// 10 -100 arası sayıları beşer beşer yazdıran while
+/*var i = 10;
+while(i<=100)
+{
+    console.log(i);
+    i=i+5;
+}*/
+ // Login kontrolü
+
+ var k_username="guest";
+ var k_password="12345";
+ var logKontrol = false;
+ while (logKontrol==false){
+var username = prompt("Kullanıcı adınızı giriniz");
+var password = prompt("şifrenizi griiniz..");
+
+if((k_username==username)&&(k_password==password)){
+    console.log("giriş başarılı");
+    logKontrol=true;
+}
+else{
+    console.log("bilgilerinizi kontrol ediniz");
+
+}
+
+ }
+    </script>
+
+
+
+
+</body>
+</html>

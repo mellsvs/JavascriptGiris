@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var personel = {
+    ad: 'meltem',
+    soyad: 'savas',
+    cinsiyet: 'Kadin',
+    telefon: '0535625',
+    adres: 'Ankara',
+    meslek:'ogrenci',
+    diller:[ 'ingilizce','almanca'],
+    hobiler:['sinema','trekking'] 
+}
+console.log(personel.hobiler);
+//personelin kaç tane dil bildiğini kolaylaştırmak için dil bilgisini dizi içerisinde tutabilriz.
+console.log(personel.diller.length);
+//hobiler dizisini alt alta yazdırmak için
+console.log(personel.hobiler);
+//dizi içerisinde for each çalıştırmak için
+personel.hobiler.forEach(function(hobi){
+console.log(hobi);
+}
+);
+
+
+// 3 tane personel kaydı tutan dizi
+
+var personeller = [
+{
+    ad: 'meltem',
+    soyad: 'savas',
+    cinsiyet: 'Kadin',
+    telefon: '0535625',
+    adres: 'Ankara',
+    meslek:'ogrenci',
+    diller: ['ingilizce','almanca'],
+    hobiler: 'sinema' 
+},
+{
+    ad: 'esra',
+    soyad: 'kece',
+    cinsiyet: 'Kadin',
+    telefon: '0535625',
+    adres: 'bursa',
+    meslek:'ogrenci',
+    diller: ['almanca','ingilizce'],
+    hobiler: 'kitap' 
+},
+{
+    ad: 'derin',
+    soyad: 'savas',
+    cinsiyet: 'Kadin',
+    telefon: '0535625',
+    adres: 'izmir',
+    meslek:'mühendis',
+    diller: ['korece','ispanyolca'],
+    hobiler: 'spor' 
+}
+];
+personeller.forEach(function(personeller)
+{   console.log("*****************");
+    console.log(personeller.ad+' '+ personeller.soyad);
+    //dizi içinde dizi yapıp personellerin bildiği dilleri yazdırabiliriz.
+    personeller.diller.forEach(function(dil)
+    {
+        console.log(dil);
+    });
+    console.log("*****************");
+});
+
+
+    </script>
+
+
+</body>
+</html>

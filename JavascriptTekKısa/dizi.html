@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diziler</title>
+
+
+</head>
+<body>
+    
+    <script>
+       var marka = ["opel","Toyata","mazda","Renault"];
+       
+        var model=new Array("corsa","Yaris","Cx-3","Clio");
+        console.log(marka[0]);
+        console.log(model[0]);
+        model[0]="Astra";
+        console.log(model);
+
+        var auris = ["Toyata","Auris",42,"true"];  
+    console.log(auris);
+    auris.push('blue');
+    //unshift ile dizinin başına ekleme yapılır.
+    auris.unshift('HB');
+    //pop ile baştaki elemanı sileriz
+    auris.pop();
+//shift ile sondaki elemanı sileriz
+    auris.shift()
+
+    for(var i =0;i<marka.length;i++){
+        console.log(marka[i])
+    }
+
+    if(marka.indexOf('mazda')!==-1){
+        console.log(marka[marka.indexOf('mazda')])
+    }
+    </script>
+</body>
+</html>

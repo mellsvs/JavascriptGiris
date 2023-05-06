@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    //dizi elemanı olan opel'in bilgilerini obje yardımıyla tutup
+    // daha kolay erişebiliriz. Dizilerdeki gibi kaçıncı eleman olduğunu bilmeye gereky yok
+    // değişken adlarıyla çağırıp kullanabiliriz.
+       var opel = {
+        marka : 'Opel',
+        model : 'Corsa',
+        yil : '2012',
+        renk: 'mavi',
+        otomatik: true
+
+       };
+
+        console.log(opel.marka);
+        // nesneye index bilgisini girerek de ulaşabiliriz.
+        console.log(opel['renk']);
+        //farklı bir obje tanımlama yöntemi
+
+        var toyata = new Object();
+        toyata.marka =' Toyota';
+        toyata.model='Yaris';
+        toyata.yil='2012';
+        toyata.renk ='kirmizi';
+        toyata.otomatik='true';
+        console.log(toyata.model);
+        // her bir objeyi bir dizinin elemanı yapabiliriz
+       
+        var arabalar=[{ 
+        marka : 'Opel',
+        model : 'Corsa',
+        yil : '2012',
+        renk: 'mavi',
+        otomatik: true
+    },
+    { 
+        marka : 'Mazda',
+        model : 'CX-3',
+        yil : '2012',
+        renk: 'beyaz',
+        otomatik: false
+    }
+];
+console.log(arabalar[1].marka);
+console.log("dizi içinde objeler yazacak")
+for ( var i =0 ; i<arabalar.length ;i++){
+    console.log(arabalar[i].marka);
+}
+
+
+        </script>
+
+
+</body>
+</html>

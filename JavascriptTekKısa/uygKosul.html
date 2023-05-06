@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   /* var dgyil =prompt("Doğum yılınızı giriniz: ");
+    if((2023-dgyil)>=18){
+        console.log("Ehliyet alabilirsiniz");
+    }else{
+        console.log(dgyil-2005+' '+'yıl sonra ehliyet alabilirsiniz');
+    }*/
+var ay = prompt("ay bilgisi giriniz");
+switch(ay){
+    case 'aralik':
+    case 'ocak':
+    case 'subat':
+        console.log("kış mevsimindesiniz.");
+        break;
+    case 'mart':
+    case 'nisan':
+    case 'mayis':
+        console.log("ilkbahar mevsimindesiniz.");
+    break;
+    case 'haziran':
+    case 'temmuz':
+    case 'agustos':
+        console.log("yaz mevsimindesiniz.");
+    break;
+    case 'eylul':
+    case 'ekim':
+    case 'kasim':
+        console.log("sonbahar mevsimindesiniz.");
+    break;
+default:
+    console.log("yanlış bir ifade girdiniz.");
+
+}
+
+   </script>
+</body>
+</html>
